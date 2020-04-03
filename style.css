@@ -1,0 +1,362 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #3B181E;
+    height: 2100px;
+}
+
+
+header {
+    height: 780px;
+    background: url("/floristry/pictures/Mask\ Group.jpg") 100% 100% no-repeat;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_1 {
+    height: 35px;
+    margin-left: 80px;
+    margin-top: 65px;
+}
+
+.logo_1 img {
+    height: 35px;
+}
+
+.burgerMenuDeckstop {
+    height: 60px;
+    margin-top: 60px;
+    margin-right: 70px;
+}
+
+.burgerMenuDeckstop img {
+    height: 60px;
+}
+
+h1 {
+    text-align: center;
+    font-family: Forum;
+    color: #FFFFFF;
+    font-size: 90px;
+    font-weight: normal;
+    letter-spacing: 0.09em;
+    margin-top: 130px;
+    margin-bottom: 3%;
+}
+
+.headButton {
+    width: 150px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid #FFFFFF;
+    font-family: Forum;
+    font-size: 9px;
+    color: #FFFFFF;
+    letter-spacing: 0.15em;
+}
+
+.containerHeadButton {
+    width: 150px;
+    height: 40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.headButton:hover {
+    cursor: pointer;
+    background: #FFFFFF;
+    color: black;
+}
+
+.socialIcons {
+    width: 20px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 73px;
+}
+
+.socialIcons img {
+    width: 20px;
+}
+
+.bottomHeader {
+    display: flex;
+    justify-content: space-between;
+    height: 23%;
+}
+
+.bottomHeader div:last-child {
+    margin-right: 70px;
+    width: 18px;
+}
+
+.bottomHeader div:last-child img {
+    width: 18px;
+}
+
+.headerMouse {
+    width: 30px;
+}
+
+.containerMouse {
+    align-self: flex-end;
+}
+
+.linerGrad {
+    height: 75px;
+    width: 100%;
+    background-image: linear-gradient(0deg, #3B181E, rgba(59, 24, 30, 0));
+    position: absolute;
+    bottom: 0px;
+}
+
+header {
+    position: relative;
+}
+
+.sectionOne h3 {
+    text-align: center;
+    font-family: Forum;
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    letter-spacing: 0.07em;
+    margin-top: 150px;
+}
+
+section hr:first-child {
+    margin-top: 20px;
+    color: #FFFFFF;
+    background-color: #FFFFFF;
+    border: solid white 1px;
+}
+
+.containerOfCards {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 85%;
+    margin-top: -20px;
+    height: 450px;
+    background-image: url(/floristry/pictures/catalogBackground.svg);
+    background-repeat: no-repeat no-repeat;
+    background-size: 100% auto;
+    background-position: center top;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    width: 245px;
+    height: 340px;
+    background-size: 245px 340px;
+    position: relative;
+}
+
+.card_1 {
+    background-image: url(/floristry/pictures/card_1.jpg);
+
+}
+
+.card_2 {
+    background-image: url(/floristry/pictures/card_2.jpg);
+}
+
+.card_3 {
+    background-image: url(/floristry/pictures/card_3.jpg);
+}
+
+.card_4 {
+    background-image: url(/floristry/pictures/card_4.jpg);
+}
+
+.cards {
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.cards hr:first-child{
+    display: none;
+}
+.cards p:first-of-type,
+.cards hr {
+    display: inline-block;
+    color: #FFFFFF;
+}
+
+.cards hr {
+    background-color: #FFFFFF;
+    border: solid white 1px;
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+.bottomOfCards p:last-of-type {
+    
+    bottom: 0;
+    font-family: Forum;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    opacity: 0.9;
+    font-weight: 100;
+}
+.containerOfCard{
+    width: 250px;
+    height: 345px;
+    padding-left: 5px;
+    padding-top: 5px;
+    border:solid 1.5px rgba(59, 24, 30, 0);
+}
+.containerOfCard:hover{
+    border: 1.5px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+.containerOfCard:hover .card_1{
+    background-image:url(/floristry/pictures/card_1_neg.jpg);
+}
+.containerOfCard:hover .card_2{
+    background-image:url(/floristry/pictures/card_2_neg.jpg);
+}
+.containerOfCard:hover .card_3{
+    background-image:url(/floristry/pictures/card_3_neg.jpg);
+}
+.containerOfCard:hover .card_4{
+    background-image:url(/floristry/pictures/card_4_neg.jpg);
+}
+.bottomOfCards{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+.bottomOfCards input{
+    display: none;
+    width: 150px;
+    height: 40px;
+    background:none;
+    border: 1px solid #FFFFFF;
+    font-family: Forum;
+    font-size: 10px;
+    color: #FFFFFF;
+    letter-spacing: 0.15em;
+}
+.containerOfCard:hover .bottomOfCards input{
+    display: block;
+}
+.containerOfCard:hover .bottomOfCards{
+    padding-bottom: 15px;
+}
+.bottomOfCards input:hover{
+    background:#FFFFFF;
+    color: black;
+    cursor: pointer;
+}
+.containerOfCard:hover .cards hr:first-of-type{
+    display: inline-block;
+}
+.containerOfCard:hover .cards hr:last-of-type{
+    display:none;
+}
+.sectionTwo{
+    margin-top: 50px;
+    margin-bottom: 140px;
+    width: 100%;
+}
+.containerInSection{
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+}
+.containerInSection img{
+    width: 60%;
+}
+.sectionTwo h3 {
+    font-family: Forum;
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    letter-spacing: 0.07em;
+    line-height: 170%;
+    margin-bottom: 0;
+}
+.sectionTwo hr {
+    margin-top: 10px;
+    color: #FFFFFF;
+    background-color: #FFFFFF;
+    border: solid white 1px;
+    float: left;
+}
+.article{
+    width: 40%;
+    padding-top: 30px;
+}
+.article p{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color:#FFFFFF;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 9px;
+    line-height: 170%;
+}
+.article input{
+    width: 180px;
+    height: 35px;
+    background: #010001;
+    color: #FFFFFF;
+    letter-spacing: 0.15em;
+    font-family: Forum;
+    border:none;
+    font-size: 10px;
+}
+.article input:hover{
+    background:#FFFFFF;
+    color:#000000;
+}
+footer hr{
+    border:0.3px solid rgba(255, 255, 255, 0.2);
+    background-color:rgba(255, 255, 255, 0.2);
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 15px;
+}
+.footLinks{
+    display: flex;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content:space-between;
+    margin-bottom: 20px;
+}
+.footLinks a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Forum;
+    font-size: 11px;
+}
+.footLinks a:hover{
+    cursor: pointer;
+}
+.footSocial img{
+    width: 20px;
+}
+.footSocial{
+    width: 12%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content:space-between;
+}
