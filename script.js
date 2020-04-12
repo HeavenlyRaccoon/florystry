@@ -37,3 +37,17 @@ $("a.scrollto").click(function () {
     $("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1100);
     return false;
     });
+var check=true;
+$("#menuOpen").click(function(){
+    console.log("LLL");
+    $(".bottomHeader, .containerHeadButton, header h1").slideToggle();
+    $(".menu").slideToggle();
+    if(check){
+        $(".burgerMenuDeckstop img").attr("src","/floristry/pictures/closeMenuDeck.svg");
+        check=!check;
+    }
+    else{
+        $(".burgerMenuDeckstop img").attr("src","/floristry/pictures/burgerMenuDeckstop.svg");
+        check=!check;
+    }
+});

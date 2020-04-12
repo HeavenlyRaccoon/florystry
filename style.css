@@ -10,12 +10,48 @@ header {
     height: 780px;
     background: url("/floristry/pictures/Mask\ Group.jpg") 100% 100% no-repeat;
     background-size: cover;
+    transition: background-color 5s;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
 }
+
+.menu {
+    display: none;
+    height: 550px;
+}
+
+.menuLinks a {
+    text-decoration: none;
+    font-family: Forum;
+    font-size: 35px;
+    text-align: center;
+    letter-spacing: 0.09em;
+    color: rgba(255, 255, 255, 0.5);
+    transition: color 0.5s;
+}
+
+.menu .socialIcons {
+    margin-top: -4%;
+}
+
+.menuLinks a:hover {
+    color: #FFFFFF;
+    transition: color 0.5s;
+}
+
+.menuLinks {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menuLinks p {
+    margin-top: 50px;
+}
+
 
 .logo_1 {
     height: 35px;
