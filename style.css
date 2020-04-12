@@ -57,6 +57,7 @@ h1 {
     font-size: 9px;
     color: #FFFFFF;
     letter-spacing: 0.15em;
+    transition: all 0.5s;
 }
 
 .containerHeadButton {
@@ -70,6 +71,7 @@ h1 {
     cursor: pointer;
     background: #FFFFFF;
     color: black;
+    transition: all 0.5s;
 }
 
 .socialIcons {
@@ -165,19 +167,22 @@ section hr:first-child {
 
 .card_1 {
     background-image: url(/floristry/pictures/card_1.jpg);
-
+    transition: all 0.2s;
 }
 
 .card_2 {
     background-image: url(/floristry/pictures/card_2.jpg);
+    transition: all 0.2s;
 }
 
 .card_3 {
     background-image: url(/floristry/pictures/card_3.jpg);
+    transition: all 0.2s;
 }
 
 .card_4 {
     background-image: url(/floristry/pictures/card_4.jpg);
+    transition: all 0.2s;
 }
 
 .cards {
@@ -185,9 +190,11 @@ section hr:first-child {
     padding-top: 10px;
     padding-bottom: 15px;
 }
-.cards hr:first-child{
+
+.cards hr:first-child {
     display: none;
 }
+
 .cards p:first-of-type,
 .cards hr {
     display: inline-block;
@@ -200,8 +207,9 @@ section hr:first-child {
     margin-bottom: 0;
     margin-left: 10px;
 }
+
 .bottomOfCards p:last-of-type {
-    
+
     bottom: 0;
     font-family: Forum;
     font-size: 12px;
@@ -210,78 +218,104 @@ section hr:first-child {
     opacity: 0.9;
     font-weight: 100;
 }
-.containerOfCard{
+
+.containerOfCard {
     width: 250px;
     height: 345px;
     padding-left: 5px;
     padding-top: 5px;
-    border:solid 1.5px rgba(59, 24, 30, 0);
+    border: solid 1.5px rgba(59, 24, 30, 0);
+    transition: border 0.2s, padding-bottom 0.5;
 }
-.containerOfCard:hover{
+
+.containerOfCard:hover {
     border: 1.5px solid rgba(255, 255, 255, 0.1);
     cursor: pointer;
+    transition: border 0.2s;
 }
-.containerOfCard:hover .card_1{
-    background-image:url(/floristry/pictures/card_1_neg.jpg);
+
+.containerOfCard:hover .card_1 {
+    background-image: url(/floristry/pictures/card_1_neg.jpg);
+    transition: all 0.2s;
 }
-.containerOfCard:hover .card_2{
-    background-image:url(/floristry/pictures/card_2_neg.jpg);
+
+.containerOfCard:hover .card_2 {
+    background-image: url(/floristry/pictures/card_2_neg.jpg);
+    transition: all 0.2s;
 }
-.containerOfCard:hover .card_3{
-    background-image:url(/floristry/pictures/card_3_neg.jpg);
+
+.containerOfCard:hover .card_3 {
+    background-image: url(/floristry/pictures/card_3_neg.jpg);
+    transition: all 0.2s;
 }
-.containerOfCard:hover .card_4{
-    background-image:url(/floristry/pictures/card_4_neg.jpg);
+
+.containerOfCard:hover .card_4 {
+    background-image: url(/floristry/pictures/card_4_neg.jpg);
+    transition: all 0.2s;
 }
-.bottomOfCards{
+
+.bottomOfCards {
     position: absolute;
     bottom: 0;
     display: flex;
     flex-direction: column;
-    
+
 }
-.bottomOfCards input{
+
+.bottomOfCards input {
     display: none;
     width: 150px;
     height: 40px;
-    background:none;
+    background: none;
     border: 1px solid #FFFFFF;
     font-family: Forum;
     font-size: 10px;
     color: #FFFFFF;
     letter-spacing: 0.15em;
 }
-.containerOfCard:hover .bottomOfCards input{
+
+.containerOfCard:hover .bottomOfCards input {
     display: block;
+    transition: all 0.5s;
 }
-.containerOfCard:hover .bottomOfCards{
+
+.containerOfCard:hover .bottomOfCards {
     padding-bottom: 15px;
+    transition: all 0.5s;
 }
-.bottomOfCards input:hover{
-    background:#FFFFFF;
+
+.bottomOfCards input:hover {
+    background: #FFFFFF;
     color: black;
     cursor: pointer;
+    transition: all 0.5s;
 }
-.containerOfCard:hover .cards hr:first-of-type{
+
+.containerOfCard:hover .cards hr:first-of-type {
     display: inline-block;
 }
-.containerOfCard:hover .cards hr:last-of-type{
-    display:none;
+
+.containerOfCard:hover .cards hr:last-of-type {
+    display: none;
 }
-.sectionTwo{
+
+.sectionTwo {
     margin-top: 50px;
     margin-bottom: 140px;
     width: 100%;
 }
-.containerInSection{
+
+.containerInSection {
     width: 60%;
     margin-right: auto;
     margin-left: auto;
     display: flex;
 }
-.containerInSection img{
+
+.containerInSection img {
     width: 60%;
 }
+
 .sectionTwo h3 {
     font-family: Forum;
     color: white;
@@ -292,6 +326,7 @@ section hr:first-child {
     line-height: 170%;
     margin-bottom: 0;
 }
+
 .sectionTwo hr {
     margin-top: 10px;
     color: #FFFFFF;
@@ -299,64 +334,76 @@ section hr:first-child {
     border: solid white 1px;
     float: left;
 }
-.article{
+
+.article {
     width: 40%;
     padding-top: 30px;
 }
-.article p{
+
+.article p {
     margin-top: 10px;
     margin-bottom: 40px;
-    color:#FFFFFF;
+    color: #FFFFFF;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 9px;
     line-height: 170%;
 }
-.article input{
+
+.article input {
     width: 180px;
     height: 35px;
     background: #010001;
     color: #FFFFFF;
     letter-spacing: 0.15em;
     font-family: Forum;
-    border:none;
+    border: none;
     font-size: 10px;
+    transition: all 0.5s;
 }
-.article input:hover{
-    background:#FFFFFF;
-    color:#000000;
+
+.article input:hover {
+    background: #FFFFFF;
+    color: #000000;
+    transition: all 0.5s;
 }
-footer hr{
-    border:0.3px solid rgba(255, 255, 255, 0.2);
-    background-color:rgba(255, 255, 255, 0.2);
+
+footer hr {
+    border: 0.3px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
     width: 95%;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 15px;
 }
-.footLinks{
+
+.footLinks {
     display: flex;
     width: 50%;
     margin-right: auto;
     margin-left: auto;
-    justify-content:space-between;
+    justify-content: space-between;
     margin-bottom: 20px;
 }
-.footLinks a{
+
+.footLinks a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.5);
     font-family: Forum;
     font-size: 11px;
 }
-.footLinks a:hover{
+
+.footLinks a:hover {
     cursor: pointer;
 }
-.footSocial img{
+
+.footSocial img {
     width: 20px;
 }
-.footSocial{
+
+.footSocial {
     width: 12%;
     margin-right: auto;
     margin-left: auto;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
 }

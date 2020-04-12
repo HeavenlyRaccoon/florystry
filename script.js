@@ -31,3 +31,9 @@ $(".whatchCatalog").hover(function () {
 }, function () {
     $(this).attr("src", "/floristry/pictures/whatchCatalog.svg");
 });
+$("a.scrollto").click(function () {
+    let elementClick = $(this).attr("href")
+    let destination = $(elementClick).offset().top-110;
+    $("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1100);
+    return false;
+    });
