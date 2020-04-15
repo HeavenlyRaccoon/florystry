@@ -196,8 +196,8 @@ section hr:first-child {
 
 .card {
     width: 245px;
-    height: 340px;
-    background-size: 245px 340px;
+    height: 100%;
+    background-size: 100% 100%;
     position: relative;
 }
 
@@ -256,10 +256,11 @@ section hr:first-child {
 }
 
 .containerOfCard {
-    width: 250px;
-    height: 345px;
+    width: 245px;
+    height: 76%;
     padding-left: 5px;
     padding-top: 5px;
+    padding: 5px;
     border: solid 1.5px rgba(59, 24, 30, 0);
     transition: border 0.2s, padding-bottom 0.5;
 }
