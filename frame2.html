@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styleFrame.css" />
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"
+  ></script>
     <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
     <title>Document</title>
   </head>
   <body>
     <div
       class="left"
-      style="background-image: url('/floristry/pictures/frame2_1.jpg');"
+      style="background-image: url('/floristry/pictures/frame2_0.jpg');"
     >
       <div class="border">
         <a href="#"><img class="logo" src="/floristry/pictures/Logo_1.svg" /></a>
@@ -34,9 +39,15 @@
       </div>
       <div class="containerOfSlider">
           <div class="slider">
+              <div class="slideOne" ><img src="/floristry/pictures/frame2_1.jpg"></div>
+              <div class="slideTwo" > <img src="/floristry/pictures/frame2_2.jpg"></div>
+              <div class="slideThree" ><img src="/floristry/pictures/frame2_3.jpg"></div>
+              <div class="slideFour"><img src="/floristry/pictures/frame2_4.jpg"></div>
               
           </div>
+          <div class="arrow"><a href="#" onclick="slide(2)"><div></div></a></div>
       </div>
     </div>
+    <script src="scriptFrame.js"></script>
   </body>
 </html>
