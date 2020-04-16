@@ -8,10 +8,10 @@ function slide(a){
     setTimeout(function func() {
         if (op < 0)
             return;
-        el[8].style.opacity = op;
         el[9].style.opacity = op;
         el[10].style.opacity = op;
         el[11].style.opacity = op;
+        el[12].style.opacity = op;
         op -= 0.1;
         setTimeout (func, 30);
         
@@ -63,10 +63,10 @@ function slide(a){
     setTimeout(function func() {
         if (op > 1)
             return;
-        el[8].style.opacity = op;
         el[9].style.opacity = op;
         el[10].style.opacity = op;
         el[11].style.opacity = op;
+        el[12].style.opacity = op;
         op += 0.1;
         setTimeout (func, 30);
         
