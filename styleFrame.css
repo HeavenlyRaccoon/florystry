@@ -1,7 +1,8 @@
-html{
+html {
     overflow: hidden;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -9,52 +10,62 @@ body{
     display: flex;
 
 }
-.left{
+
+.left {
     height: 100vh;
     width: 49%;
-    background-size:cover;
-    background-repeat:no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.border{
+
+.border {
     width: 92%;
     height: 89%;
     border: 1px solid rgba(255, 255, 255, 0.2);
     position: relative;
-    top:2.5%;
+    top: 2.5%;
     left: 2.5%;
     padding-top: 6%;
     padding-left: 8%;
 }
-.logo{
+
+.logo {
     height: 35px;
 }
-.right{
+
+.right {
     height: 100vh;
     width: 51%;
     padding-top: 4%;
 }
-.burgerMenuDeckstop{
+
+.burgerMenuDeckstop {
     position: relative;
-    left:80%;
+    left: 80%;
 }
-.burgerMenuDeckstop img{
+
+.burgerMenuDeckstop img {
     height: 60px;
 }
-.containerOfArticle{
+
+.containerOfArticle {
     width: 100%;
-    margin-top: 7%;
+    height: 55%;
+    margin-top: -3%;
+    margin-bottom: 10px;
 }
+
 .article {
     width: 60%;
     margin-left: 13%;
-    
+
 }
 
 .article p {
     margin-top: 10%;
     margin-bottom: 5%;
     color: #FFFFFF;
-    font-size: 13wpx;
+    font-size: 1vw;
     letter-spacing: 0.05em;
     line-height: 170%;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -78,55 +89,64 @@ body{
     transition: all 0.5s;
     cursor: pointer;
 }
+
 .article h3 {
     font-family: Forum;
     color: white;
     font-style: normal;
     font-weight: normal;
     font-size: 40px;
-    letter-spacing: 0.15em; 
+    letter-spacing: 0.15em;
     margin-bottom: 0;
 }
-.containerOfSlider{
+
+.containerOfSlider {
     width: 100%;
     height: 6.5vw;
     /* background-color:red; */
-    margin-top: 8%;
+    margin-top: 4%;
 }
-.slider{
+
+.slider {
     width: 60%;
     height: 100%;
     margin-left: 13%;
     /* background-color:green; */
     display: flex;
-    
+
 }
-.slider>div{
+
+.slider>div {
     height: 100%;
     width: 21%;
     margin-right: 4%;
 }
-.slider img{
+
+.slider img {
     height: 100%;
     width: 100%;
 }
 
-.arrow{
+.arrow {
     height: 38%;
     width: 5%;
-    background-size:100% 100%;
+    background-size: 100% 100%;
     position: relative;
     bottom: 69%;
     left: 68%;
     background-image: url('/floristry/pictures/Arrow.png');
 }
-.arrow a, .arrow a div{
+
+.arrow a,
+.arrow a div {
     height: 100%;
     width: 100%;
 }
-.arrow:hover{
-    background-image:url("/floristry/pictures/ArrowHover.png");
+
+.arrow:hover {
+    background-image: url("/floristry/pictures/ArrowHover.png");
 }
+
 .morePhoto {
     color: #FFFFFF;
     text-decoration: none;
@@ -137,20 +157,24 @@ body{
     justify-content: flex-end;
     margin-top: 2%;
 }
-.morePhoto img{
+
+.morePhoto img {
     width: 2%;
     margin-left: 2%;
 }
-header{
+
+header {
     width: 100%;
     display: none;
     height: 100vh;
-    background-color:#3B181E;
+    background-color: #3B181E;
 }
+
 nav {
     display: flex;
     justify-content: space-between;
 }
+
 .menu {
     height: 550px;
 }
@@ -164,6 +188,7 @@ nav {
     color: rgba(255, 255, 255, 0.5);
     transition: color 0.5s;
 }
+
 .socialIcons {
     width: 20px;
     height: 140px;
@@ -173,6 +198,7 @@ nav {
     margin-top: -4%;
     margin-left: 73px;
 }
+
 .socialIcons img {
     width: 20px;
 }
@@ -207,8 +233,8 @@ nav {
     margin-top: 60px;
 }
 
-.darkwindow{
-    background: rgba(35, 34, 39,0.8);
+.darkwindow {
+    background: rgba(35, 34, 39, 0.8);
     width: 100%;
     height: 100vh;
     position: absolute;
@@ -218,11 +244,11 @@ nav {
     z-index: 1000;
 }
 
-.orderWindow{
+.orderWindow {
     width: 550px;
     height: 341px;
     position: absolute;
-    
+
     top: 0;
     right: 0;
     bottom: 0;
@@ -230,30 +256,35 @@ nav {
     margin: auto;
     display: flex;
 }
-.imgOrder{
+
+.imgOrder {
     width: 47%;
     height: 100%;
-    background-image:url("/floristry/pictures/orderImg.png");
-    background-size:100% 100%;
-    background-repeat:no-repeat;
+    background-image: url("/floristry/pictures/orderImg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
-.articleOrder{
+
+.articleOrder {
     width: 53%;
     height: 100%;
     background-color: #3B181E;
     /* background-color: green; */
 }
-.navBar{
+
+.navBar {
     height: 41px;
     /* background-color:red; */
     display: flex;
     justify-content: flex-end;
     margin-bottom: 0;
 }
-.navBar img{
+
+.navBar img {
     width: 60px;
 }
-.waitCall{
+
+.waitCall {
     margin-top: 50px;
     width: 63%;
     margin-right: auto;
@@ -266,7 +297,8 @@ nav {
     color: #FFFFFF;
     display: none;
 }
-.containerOfP{
+
+.containerOfP {
     margin-top: -20px;
     width: 63%;
     margin-right: auto;
@@ -278,7 +310,8 @@ nav {
     line-height: 150%;
     color: #FFFFFF;
 }
-.orderInput{
+
+.orderInput {
     width: 75%;
     margin-right: auto;
     margin-left: auto;
@@ -286,11 +319,12 @@ nav {
     height: 150px;
     display: flex;
     flex-direction: column;
-    justify-content:space-between ;
+    justify-content: space-between;
 }
-.orderInput input{
+
+.orderInput input {
     height: 35px;
-    background:none;
+    background: none;
     border: 1px solid rgba(246, 246, 249, 0.2);
     font-family: Forum;
     font-size: 14px;
@@ -299,21 +333,24 @@ nav {
     color: #FFFFFF;
     padding-left: 15px;
 }
-.orderInput input:focus{
+
+.orderInput input:focus {
     outline: none;
 }
 
-.tel{
+.tel {
     margin-top: -10px;
 }
-.orderInput input:last-of-type{
-    border:1px solid #ffffff;
-    background:#ffffff;
+
+.orderInput input:last-of-type {
+    border: 1px solid #ffffff;
+    background: #ffffff;
     color: black;
     font-size: 11px;
-    letter-spacing:0.1em;
+    letter-spacing: 0.1em;
     padding-left: 0;
 }
-.orderInput input:last-of-type:hover{
+
+.orderInput input:last-of-type:hover {
     cursor: pointer;
 }

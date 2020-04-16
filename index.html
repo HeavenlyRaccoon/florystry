@@ -28,10 +28,10 @@
       </nav>
       <div class="menu">
       <div class="menuLinks">
-        <a href="#"><p>СВАДЕБНАЯ <br>ФЛОРИСТИКА</p></a>
-        <a href="#"><p>БУКЕТЫ НА ЛЮБЫЕ <br>МЕРОПРИЯТЯ</p></a>
-        <a href="#"><p>КОМПОЗИЦИИ</p></a>
-        <a href="#"><p>ОФОРМЛЕНИЕ <br>МЕРОПРИЯТИЙ</p></a>
+        <a href="/floristry/main/frame3.html"><p>СВАДЕБНАЯ <br>ФЛОРИСТИКА</p></a>
+        <a href="/floristry/main/frame2.html"><p>БУКЕТЫ НА ЛЮБЫЕ <br>МЕРОПРИЯТЯ</p></a>
+        <a href="/floristry/main/frame4.html"><p>КОМПОЗИЦИИ</p></a>
+        <a href="/floristry/main/frame5.html"><p>ОФОРМЛЕНИЕ <br>МЕРОПРИЯТИЙ</p></a>
       </div>
       <div id="one" class="socialIcons">
         <a href="https://www.instagram.com/heavenly_raccoon/"
@@ -109,7 +109,7 @@
               <hr width="50px" />
               <div class="bottomOfCards">
                 <p>БУКЕТ НЕВЕСТЫ И СВАДЕБНОЕ ОФОРМЛЕНИЕ</p>
-                <input type="button" value="СМОТРЕТЬ РАБОТЫ" />
+                <input type="button" value="СМОТРЕТЬ РАБОТЫ" onclick="window.location.href = '/floristry/main/frame3.html'"/>
               </div>
             </div>
           </div>
@@ -122,7 +122,7 @@
               <hr width="50px" />
               <div class="bottomOfCards">
                 <p>БУКЕТЫ НА ТОРЖЕСТВА</p>
-                <input type="button" value="СМОТРЕТЬ РАБОТЫ" />
+                <input type="button" value="СМОТРЕТЬ РАБОТЫ" onclick="window.location.href = '/floristry/main/frame2.html'"/>
               </div>
             </div>
           </div>
@@ -135,7 +135,7 @@
               <hr width="50px" />
               <div class="bottomOfCards">
                 <p>КОМПОЗИЦИИ</p>
-                <input type="button" value="СМОТРЕТЬ РАБОТЫ" />
+                <input type="button" value="СМОТРЕТЬ РАБОТЫ" onclick="window.location.href = '/floristry/main/frame4.html'"/>
               </div>
             </div>
           </div>
@@ -148,7 +148,7 @@
               <hr width="50px" />
               <div class="bottomOfCards">
                 <p>ОФОРМЛЕНИЕ МЕРОПРИЯТИЙ</p>
-                <input type="button" value="СМОТРЕТЬ РАБОТЫ" />
+                <input type="button" value="СМОТРЕТЬ РАБОТЫ" onclick="window.location.href = '/floristry/main/frame5.html'"/>
               </div>
             </div>
           </div>
@@ -164,7 +164,7 @@
             При заказе свадебного оформления предоставляется<br>скидка на букет
             невесты и бутоньерку в размере 30%
           </p>
-          <input type="button" value="ЗАКАЗАТЬ ОФОРМЛЕНИЕ">
+          <input type="button" value="ЗАКАЗАТЬ ОФОРМЛЕНИЕ" onclick="order()">
         </div>
         <img src="/floristry/pictures/stok.jpg" />
       </div>
@@ -173,10 +173,10 @@
       <hr>
       <div class="footLinks">
         <a href="#">Свадебная флористика</a>
-        <a href="#">Букеты на любые мероприятия</a>
-        <a href="#">Букеты невесты</a>
-        <a href="#">Композиции</a>
-        <a href="#">Оформление мероприятий</a>
+        <a href="/floristry/main/frame2.html">Букеты на любые мероприятия</a>
+        <a href="/floristry/main/frame3.html">Букеты невесты</a>
+        <a href="/floristry/main/frame4.html">Композиции</a>
+        <a href="/floristry/main/frame5.html">Оформление мероприятий</a>
       </div>
       <div class="footSocial">
         <a href="https://www.instagram.com/heavenly_raccoon/"
@@ -198,6 +198,21 @@
         </div>
       </div>
     </footer>
+    <div class="darkwindow">
+      <div class="orderWindow">
+          <div class="imgOrder"></div>
+          <div class="articleOrder">
+              <div class="navBar"><img src="/floristry/pictures/closeMenuDeck.svg" onclick="closeOrder()"></div>
+              <div class="waitCall">В скором времени ожидайте звонка</div>
+              <div class="containerOfP"><p>ОСТАВЬТЕ СВОЙ НОМЕР И МЫ ВАМ ПОЗВОНИМ! </p></div>
+              <div class="orderInput">
+                  <input type="text" class="text" placeholder="Имя">
+                  <input type="tel" class="tel" placeholder="Телефон">
+                  <input type="submit" value="ПОЗВОНИТЕ МНЕ" onclick="wait()">
+              </div>
+          </div>
+      </div>
+  </div>
     <script src="script.js"></script>
   </body>
 </html>
