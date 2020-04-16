@@ -60,6 +60,21 @@
         </div>
       </div>
     </header>
+    <div class="darkwindow">
+        <div class="orderWindow">
+            <div class="imgOrder"></div>
+            <div class="articleOrder">
+                <div class="navBar"><a href="#" onclick="closeOrder()"><img src="/floristry/pictures/closeMenuDeck.svg"></a></div>
+                <div class="waitCall">В скором времени ожидайте звонка</div>
+                <div class="containerOfP"><p>ОСТАВЬТЕ СВОЙ НОМЕР И МЫ ВАМ ПОЗВОНИМ! </p></div>
+                <div class="orderInput">
+                    <input type="text" class="text" placeholder="Имя">
+                    <input type="tel" class="tel" placeholder="Телефон">
+                    <input type="submit" value="ПОЗВОНИТЕ МНЕ" onclick="wait()">
+                </div>
+            </div>
+        </div>
+    </div>
     <div
       class="left"
       style="background-image: url('/floristry/pictures/frame2_0.jpg');"
@@ -83,7 +98,7 @@
             круглые, вертикалье, веерообразные, букеты-зонтики, букеты в
             вегетативной технике и много других экзотических видов.
           </p>
-          <input type="button" value="ЗАКАЗАТЬ" />
+          <input type="button" value="ЗАКАЗАТЬ" onclick="order()"/>
         </div>
       </div>
       <div class="containerOfSlider">

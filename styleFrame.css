@@ -206,3 +206,114 @@ nav {
 .burgerMenuDeckstop {
     margin-top: 60px;
 }
+
+.darkwindow{
+    background: rgba(35, 34, 39,0.8);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 1000;
+}
+
+.orderWindow{
+    width: 550px;
+    height: 341px;
+    position: absolute;
+    
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    display: flex;
+}
+.imgOrder{
+    width: 47%;
+    height: 100%;
+    background-image:url("/floristry/pictures/orderImg.png");
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+}
+.articleOrder{
+    width: 53%;
+    height: 100%;
+    background-color: #3B181E;
+    /* background-color: green; */
+}
+.navBar{
+    height: 41px;
+    /* background-color:red; */
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0;
+}
+.navBar img{
+    width: 60px;
+}
+.waitCall{
+    margin-top: 50px;
+    width: 63%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-family: Forum;
+    font-size: 20px;
+    letter-spacing: 0.09em;
+    line-height: 150%;
+    color: #FFFFFF;
+    display: none;
+}
+.containerOfP{
+    margin-top: -20px;
+    width: 63%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-family: Forum;
+    font-size: 20px;
+    letter-spacing: 0.09em;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+.orderInput{
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    /* background-color:blue; */
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between ;
+}
+.orderInput input{
+    height: 35px;
+    background:none;
+    border: 1px solid rgba(246, 246, 249, 0.2);
+    font-family: Forum;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+    padding-left: 15px;
+}
+.orderInput input:focus{
+    outline: none;
+}
+
+.tel{
+    margin-top: -10px;
+}
+.orderInput input:last-of-type{
+    border:1px solid #ffffff;
+    background:#ffffff;
+    color: black;
+    font-size: 11px;
+    letter-spacing:0.1em;
+    padding-left: 0;
+}
+.orderInput input:last-of-type:hover{
+    cursor: pointer;
+}

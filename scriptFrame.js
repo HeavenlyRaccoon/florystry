@@ -123,4 +123,22 @@ $(".burgerMenuDeckstop").click(function(){
     }
    
 });
-
+ function order(){
+     $(".darkwindow").css("display","block");
+ }
+ function closeOrder(){
+    $(".containerOfP").css("display","block");
+    $(".orderInput").css("display","flex");
+    $(".waitCall").css("display","none");
+    $(".darkwindow").css("display","none");
+    let a = $(".text");
+     a[0].value="";
+     a=$(".tel");
+     a[0].value="";
+ }
+ function wait(){
+     $(".containerOfP, .orderInput").slideUp();
+     setTimeout(function(){
+         $(".waitCall").slideToggle();
+     },100);
+ }
