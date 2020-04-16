@@ -1,4 +1,5 @@
 'use strict'
+
 let i=4;
 function slide(a){
 
@@ -7,10 +8,10 @@ function slide(a){
     setTimeout(function func() {
         if (op < 0)
             return;
-        el[2].style.opacity = op;
-        el[3].style.opacity = op;
-        el[4].style.opacity = op;
-        el[5].style.opacity = op;
+        el[8].style.opacity = op;
+        el[9].style.opacity = op;
+        el[10].style.opacity = op;
+        el[11].style.opacity = op;
         op -= 0.1;
         setTimeout (func, 30);
         
@@ -62,13 +63,64 @@ function slide(a){
     setTimeout(function func() {
         if (op > 1)
             return;
-        el[2].style.opacity = op;
-        el[3].style.opacity = op;
-        el[4].style.opacity = op;
-        el[5].style.opacity = op;
+        el[8].style.opacity = op;
+        el[9].style.opacity = op;
+        el[10].style.opacity = op;
+        el[11].style.opacity = op;
         op += 0.1;
         setTimeout (func, 30);
         
     });
     }
 }
+$(".facebookIcon").hover(function () {
+    console.log("LOL");
+    $(this).attr("src", "/floristry/pictures/facebookIconNeg.svg");
+}, function () {
+    $(this).attr("src", "/floristry/pictures/facebookIcon.svg");
+});
+$(".instagramIcon").hover(function () {
+    $(this).attr("src", "/floristry/pictures/instagramIconNeg.svg");
+}, function () {
+    $(this).attr("src", "/floristry/pictures/instagramIcon.svg");
+});
+$(".whatsappIcon").hover(function () {
+    $(this).attr("src", "/floristry/pictures/whatsupIconNeg.svg");
+}, function () {
+    $(this).attr("src", "/floristry/pictures/whatsupIcon.svg");
+});
+$(".vkIcon").hover(function () {
+    $(this).attr("src", "/floristry/pictures/vkIconNeg.svg");
+}, function () {
+    $(this).attr("src", "/floristry/pictures/vkIcon.svg");
+});
+let check = true;
+$(".burgerMenuDeckstop").click(function(){
+    console.log("LLL");
+    if(check){
+        $(".left, .right").slideToggle();
+        setTimeout(slideHead,500);
+    }
+    else{
+        slideHead();
+        setTimeout(function(){
+            $(".left, .right").slideToggle();
+        },500);
+    }
+    function slideHead(){
+        $("header").slideToggle();
+        if(check){
+            $(".burgerMenuDeckstop img").attr("src","/floristry/pictures/closeMenuDeck.svg");
+            $(".burgerMenuDeckstop").css("position","static");
+            $(".burgerMenuDeckstop").css("margin-right","5%");
+            check=!check;
+        }
+        else{
+            $(".burgerMenuDeckstop img").attr("src","/floristry/pictures/burgerMenuDeckstop.svg");
+            $(".burgerMenuDeckstop").css("position","relative");
+            check=!check;
+        }
+    }
+   
+});
+

@@ -5,24 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styleFrame.css" />
     <script
-    src="https://code.jquery.com/jquery-3.4.1.js"
-    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"
-  ></script>
-    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Forum&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
+    <header>
+      <nav>
+        <a href="#" class="logo_1"
+          ><img src="/floristry/pictures/Logo_1.svg"
+        /></a>
+        <a href="#" class="burgerMenuDeckstop"
+          ><img src="/floristry/pictures/burgerMenuDeckstop.svg"
+        /></a>
+      </nav>
+      <div class="menu">
+        <div class="menuLinks">
+          <a href="#"
+            ><p>СВАДЕБНАЯ <br />ФЛОРИСТИКА</p></a
+          >
+          <a href="#"
+            ><p>БУКЕТЫ НА ЛЮБЫЕ <br />МЕРОПРИЯТЯ</p></a
+          >
+          <a href="#"><p>КОМПОЗИЦИИ</p></a>
+          <a href="#"
+            ><p>ОФОРМЛЕНИЕ <br />МЕРОПРИЯТИЙ</p></a
+          >
+        </div>
+        <div id="one" class="socialIcons">
+          <a href="https://www.instagram.com/heavenly_raccoon/"
+            ><img
+              class="instagramIcon"
+              src="/floristry/pictures/instagramIcon.svg"
+          /></a>
+          <a href="https://vk.com/id210553771"
+            ><img
+              class="facebookIcon"
+              src="/floristry/pictures/facebookIcon.svg"
+          /></a>
+          <a href="https://vk.com/id210553771"
+            ><img
+              class="whatsappIcon"
+              src="/floristry/pictures/whatsupIcon.svg"
+          /></a>
+          <a href="https://vk.com/id210553771"
+            ><img class="vkIcon" src="/floristry/pictures/vkIcon.svg"
+          /></a>
+        </div>
+      </div>
+    </header>
     <div
       class="left"
       style="background-image: url('/floristry/pictures/frame2_0.jpg');"
     >
       <div class="border">
-        <a href="#"><img class="logo" src="/floristry/pictures/Logo_1.svg" /></a>
+        <a href="#"
+          ><img class="logo" src="/floristry/pictures/Logo_1.svg"
+        /></a>
       </div>
     </div>
     <div class="right">
-      <a href="#" class="burgerMenuDeckstop" id="menuOpen"
+      <a href="#" class="burgerMenuDeckstop"
         ><img src="/floristry/pictures/burgerMenuDeckstop.svg"
       /></a>
       <div class="containerOfArticle">
@@ -38,15 +87,28 @@
         </div>
       </div>
       <div class="containerOfSlider">
-          <div class="slider">
-              <div class="slideOne" ><img src="/floristry/pictures/frame2_1.jpg"></div>
-              <div class="slideTwo" > <img src="/floristry/pictures/frame2_2.jpg"></div>
-              <div class="slideThree" ><img src="/floristry/pictures/frame2_3.jpg"></div>
-              <div class="slideFour"><img src="/floristry/pictures/frame2_4.jpg"></div>
-              
+        <div class="slider">
+          <div class="slideOne">
+            <img src="/floristry/pictures/frame2_1.jpg" />
           </div>
-          <div class="arrow"><a href="#" onclick="slide(2)"><div></div></a></div>
+          <div class="slideTwo">
+            <img src="/floristry/pictures/frame2_2.jpg" />
+          </div>
+          <div class="slideThree">
+            <img src="/floristry/pictures/frame2_3.jpg" />
+          </div>
+          <div class="slideFour">
+            <img src="/floristry/pictures/frame2_4.jpg" />
+          </div>
+        </div>
+        <div class="arrow">
+          <a href="#" onclick="slide(2)"><div></div></a>
+        </div>
       </div>
+      <a class="morePhoto" href="https://www.instagram.com/heavenly_raccoon/">
+        <p>Больше фотографий в профиле</p>
+        <img src="/floristry/pictures/instagramIcon.svg" />
+      </a>
     </div>
     <script src="scriptFrame.js"></script>
   </body>
