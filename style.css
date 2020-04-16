@@ -427,10 +427,13 @@ footer hr {
     color: rgba(255, 255, 255, 0.5);
     font-family: Forum;
     font-size: 11px;
+    transition: color 0.2s;
 }
 
 .footLinks a:hover {
     cursor: pointer;
+    color:#FFFFFF;
+    transition: color 0.2s;
 }
 
 .footSocial img {
