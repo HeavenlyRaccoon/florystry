@@ -17,8 +17,8 @@ function slide(a) {
         setTimeout(func, 30);
 
     }, 60);
-    setTimeout(switchImg, 400);
-    setTimeout(opca, 400);
+    setTimeout(switchImg, 500);
+    setTimeout(opca, 500);
 
     function switchImg() {
         console.log("op");
